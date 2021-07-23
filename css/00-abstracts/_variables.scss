@@ -1,0 +1,32 @@
+/* == COLORS == */
+
+/* -- Neutral -- */
+$b-nc-00: #ffffff;
+$b-nc-15: #f3f3f3;
+$b-nc-25: #ece9e9;
+$b-nc-50: #999999;
+$b-nc-60: #666666;
+$b-nc-85: #333333;
+$b-nc-100: #000000;
+
+/* -- Utility -- */
+$b-uc-positive: #00c2a3;
+$b-uc-caution: #ff8700;
+$b-uc-warning: #ed020a;
+
+/* -- Accent -- */
+$b-ac-1: #00c2a3;
+$b-ac-2: #219b95;
+$b-ac-3: #735aff;
+
+/* == BORDERS == */
+
+/* -- Border radius -- */
+$border-rds--s: 4px;
+$border-rds--m: 8px;
+
+/* == TRANSITIONS == */
+
+$tr--s: all 0.3s ease;
+$tr--m: all 0.5s ease;
+$tr--l: all 0.75s ease-out;
