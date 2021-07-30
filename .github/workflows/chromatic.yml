@@ -20,6 +20,9 @@ jobs:
       - name: Install dependencies
         run: yarn
         # 👇 Adds Chromatic as a step in the workflow
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       - name: Publish to Chromatic
         uses: chromaui/action@v1
         # Chromatic GitHub Action options
@@ -27,3 +30,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          buildScriptName: MEP-${{steps.date.outputs.date}}
